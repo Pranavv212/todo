@@ -7,6 +7,10 @@ class TodoItemsController < ApplicationController
         redirect_to @todo_list
     end 
 
+  
+
+   
+
     def destroy
         @todo_item = @todo_list.todo_items.find(params[:id])
         if @todo_item.destroy
